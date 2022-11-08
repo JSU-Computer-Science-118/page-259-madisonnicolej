@@ -12,7 +12,12 @@ int main()
 	cout << "Consider the formula ax^2 + bx + c = 0."
 		<<" Input the values for a, b, and c." << endl;
 	cin >> a >> b >> c;
-	discriminant = (b * b) - (4 * a * c);
+	if (a ==0){
+		cout<< "Invalid entry." << endl;
+	}
+	else {
+	discriminant = pow(b, 2) - (4 * a * c);
+	}
 
 	root1 = (-b + sqrt(discriminant)) / (2 * a);
 	root2 = (-b - sqrt(discriminant)) / (2 * a);
