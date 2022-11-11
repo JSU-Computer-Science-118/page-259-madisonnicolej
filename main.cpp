@@ -9,16 +9,15 @@ int main()
 {
 	float a, b, c, discriminant, root1, root2;
 
-	cout <<" Input the values for a, b, and c." << endl;
 	cin >> a >> b >> c;
 	discriminant = pow(b, 2) - (4 * a * c);
+	root1 = (-b + sqrt(discriminant)) / (2 * a);
+	root2 = (-b - sqrt(discriminant)) / (2 * a);
+	
 	if (a ==0){
 		cout<< "Invalid entry" << endl;
 	}
 	
-	root1 = (-b + sqrt(discriminant)) / (2 * a);
-	root2 = (-b - sqrt(discriminant)) / (2 * a);
-
 	if (discriminant < 0) {
 		cout << "Complex roots";
 	}
