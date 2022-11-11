@@ -11,17 +11,17 @@ int main()
 
 	cin >> a >> b >> c;
 	
-	if (a ==0){
-		cout<< "Invalid entry" << endl;
-	}
+	
 	
 	discriminant = pow(b, 2) - (4 * a * c);
 	root1 = (-b + sqrt(discriminant)) / (2 * a);
 	root2 = (-b - sqrt(discriminant)) / (2 * a);
 	
+	if (a ==0){
+		cout<< "Invalid entry" << endl;
+	}
 	
-	
-	if (discriminant < 0) {
+	else if (discriminant < 0) {
 		cout << "Complex roots";
 	}
 	else if (discriminant == 0) {
